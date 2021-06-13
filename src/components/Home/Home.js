@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
+import AuthContext from "../../store/auth-context";
+import Button from "../UI/Button/Button";
 
 import Card from "../UI/Card/Card";
 import classes from "./Home.module.css";
 
-const Home = (props) => {
+const Home = () => {
+  const ctx = useContext(AuthContext);
   return (
     <Card className={classes.home}>
-      <h1>Bienvenido de Nuevo!</h1>
+      <h1>Bienvenido luchadores!</h1>
+      <Button onClick={ctx.onLogout} className={classes.btn}>
+        Cerrar
+      </Button>
     </Card>
   );
 };
