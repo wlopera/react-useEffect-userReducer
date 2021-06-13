@@ -16,3 +16,6 @@ Formulario de login mediante react con useEffect y useReducer
 ![Captura](https://user-images.githubusercontent.com/7141537/121818462-e5357a00-cc4c-11eb-9d42-88f0e22dd597.PNG)
 
 ##### En vez de enviar data de componente a componente (props) se puede usar un lugar con toda la información (Store) y luego usar el contectox 'useContext' para pasar obtener la data directo al componente que la requiera.
+
+## Reglas uso de Hooks
+![Captura](https://user-images.githubusercontent.com/7141537/121820668-bd98de80-cc59-11eb-808e-9ff37ad6dfc0.PNG)
